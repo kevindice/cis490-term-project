@@ -1,0 +1,28 @@
+{
+  "name": "490-term-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevindice/cis490-term-project.git"
+  },
+  "author": "Kevin Dice",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevindice/cis490-term-project/issues"
+  },
+  "homepage": "https://github.com/kevindice/cis490-term-project#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0",
+    "jade": "^1.11.0",
+    "jspm": "^0.16.15",
+    "lodash": "^3.10.1",
+    "mongoose": "^4.2.9"
+  }
+}
