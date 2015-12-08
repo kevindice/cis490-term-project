@@ -55,7 +55,7 @@ def clean(input):
 
     v3 = re.sub("\s\s+", " ", v2)
 
-    v4 = v3.lower().strip()
+    v4 = v3.upper().strip()
 
     return v4
 
