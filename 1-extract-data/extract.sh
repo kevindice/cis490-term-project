@@ -1,1 +1,1 @@
-bzip2 -d {$1} -k
+bzip2 -d $1 -k
