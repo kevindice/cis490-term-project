@@ -1,1 +1,1 @@
-curl -i -H "Accept: application/json" "kevindice.com/beocatTest/{$1}"
+curl -i -H "Accept: application/json" "kevindice.com/{$1}/"
