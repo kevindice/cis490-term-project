@@ -3,6 +3,8 @@ var app = express();
 
 app.use('view engine', 'jade');
 
+app.use(express.static('dist'));
+
 app.get('/', function (req, res) {
   res.render('index.html');
 });
