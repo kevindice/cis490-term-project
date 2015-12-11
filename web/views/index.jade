@@ -14,10 +14,12 @@ html
       link(rel='stylesheet', href='assets/css/ie8.css')
     //if lte IE 9
       link(rel='stylesheet', href='assets/css/ie9.css')
-    link(rel='stylesheet', href='assets/css/jquery.tagsinput.css')
+    link(rel='stylesheet', href='assets/css/jquery.tagsinput.min.css')
+    link(rel='stylesheet', href='assets/css/c3.min.css')
     noscript
       link(rel='stylesheet', href='assets/css/noscript.css')
   body.is-loading-0.is-loading-1.is-loading-2
+
     // Main
     #main
       // Header
@@ -26,8 +28,8 @@ html
         p
           a(href='http://html5up.net') Oct 2007 - May 2015
       
-      
-      
+        label Enter 1 or 2 word phrases      
+          textarea#tags      
       
 
       // Footer
@@ -35,6 +37,11 @@ html
         ul.copyright
           li Ngram Viewer by Kevin Dice
           li Data sourced from Reddit.com
+
+    #viewer
+      .inner
+        #chartArea
+ 
     // Scripts
     script(src='assets/js/jquery.min.js')
     script(src='assets/js/jquery.tagsinput.js')
@@ -42,3 +49,7 @@ html
     //if lte IE 8
       script(src='assets/js/ie/respond.min.js')
     script(src='assets/js/main.js')
+    script(src='jspm_packages/system.js')
+    script(src='config.js')
+    script
+      | System.import('charts.js')

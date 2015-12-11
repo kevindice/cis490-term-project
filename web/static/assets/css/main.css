@@ -85,7 +85,7 @@
 	}
 
 	html, body {
-		background-color: #101010;
+		background-color: #A9A5A5;
 		overflow: hidden;
 	}
 
@@ -1153,3 +1153,15 @@
 				}
 
 		}
+
+
+#tags_tagsinput{
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+#chartArea{
+    margin-left: 14%;
+    margin-top: 150px;
+}

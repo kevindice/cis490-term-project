@@ -142,32 +142,9 @@ var main = (function($) { var _ = {
 			_.$window = $(window);
 			_.$body = $('body');
 
-		// Thumbnails.
-			_.$thumbnails = $('#thumbnails');
-
-		// Viewer.
-			_.$viewer = $(
-				'<div id="viewer">' +
-					'<div class="inner">' +
-						'<div class="nav-next"></div>' +
-						'<div class="nav-previous"></div>' +
-						'<div class="toggle"></div>' +
-					'</div>' +
-				'</div>'
-			).appendTo(_.$body);
-
-		// Nav.
-			_.$navNext = _.$viewer.find('.nav-next');
-			_.$navPrevious = _.$viewer.find('.nav-previous');
-
 		// Main wrapper.
 			_.$main = $('#main');
 
-		// Toggle.
-			$('<div class="toggle"></div>')
-				.appendTo(_.$main);
-
-			_.$toggle = $('.toggle');
 
 		// IE<9: Fix viewer width (no calc support).
 			if (skel.vars.IEVersion < 9)
@@ -258,8 +235,7 @@ var main = (function($) { var _ = {
 				// Show first slide if xsmall isn't active or it just deactivated.
 					skel.on('-xsmall !xsmall', function() {
 
-						if (_.current === null)
-							_.switchTo(0, true);
+						
 
 					});
 
