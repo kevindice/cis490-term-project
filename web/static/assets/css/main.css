@@ -729,22 +729,6 @@
 		right: 0;
 	}
 
-		#main .toggle {
-			-webkit-tap-highlight-color: transparent;
-			position: absolute;
-			top: 0;
-			width: 4em;
-			height: 4em;
-			background-image: url("images/close-small-alt.svg");
-			background-repeat: no-repeat;
-			background-size: 32px 32px;
-			cursor: pointer;
-			display: none;
-			z-index: 1;
-			background-position: 0.5em 0.5em;
-			left: 0;
-		}
-
 		body.fullscreen #main {
 			visibility: hidden;
 			right: -22.5em;
@@ -1022,35 +1006,6 @@
 				height: 100%;
 			}
 
-			#viewer .inner .toggle {
-				-webkit-tap-highlight-color: transparent;
-				position: absolute;
-				top: 0;
-				width: 4em;
-				height: 4em;
-				background-image: url("images/close.svg");
-				background-repeat: no-repeat;
-				background-size: 64px 64px;
-				cursor: pointer;
-				z-index: 1;
-				right: 0;
-				background-position: calc(100% - 0.75em) 0.75em;
-			}
-
-			#viewer .inner .nav-next,
-			#viewer .inner .nav-previous {
-				-webkit-tap-highlight-color: transparent;
-				position: absolute;
-				top: 50%;
-				width: 6em;
-				height: 6em;
-				margin-top: -3em;
-				background-image: url("images/arrow.svg");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				cursor: pointer;
-			}
 
 			#viewer .inner .nav-previous {
 				-moz-transform: scaleX(-1);
@@ -1111,29 +1066,7 @@
 				opacity: 0;
 			}
 
-			#viewer .slide:before {
-				-moz-animation: spinner 1s linear infinite;
-				-webkit-animation: spinner 1s linear infinite;
-				-ms-animation: spinner 1s linear infinite;
-				animation: spinner 1s linear infinite;
-				-moz-transition: opacity 0.5s ease-in-out;
-				-webkit-transition: opacity 0.5s ease-in-out;
-				-ms-transition: opacity 0.5s ease-in-out;
-				transition: opacity 0.5s ease-in-out;
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				width: 3em;
-				height: 3em;
-				background-image: url("images/spinner.svg");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				margin: -1.5em 0 0 -1.5em;
-				opacity: 0;
-			}
+
 
 			#viewer .slide.loading:before {
 				opacity: 1;
@@ -1147,9 +1080,6 @@
 			width: 100%;
 		}
 
-			body.fullscreen #viewer .inner .toggle {
-				background-image: url("images/open.svg");
-			}
 
 		body.is-loading-1 #viewer {
 			opacity: 0;
@@ -1178,7 +1108,6 @@
 					-webkit-transition: opacity 0.75s ease;
 					-ms-transition: opacity 0.75s ease;
 					transition: opacity 0.75s ease;
-					background-image: url("images/open.svg");
 					opacity: 0;
 					right: 0;
 				}
@@ -1195,15 +1124,7 @@
 				background-size: 32px 32px;
 			}
 
-			#viewer .inner .nav-next,
-			#viewer .inner .nav-previous {
-				background-image: url("images/arrow-small.svg");
-				background-size: 32px 32px;
-			}
 
-			body.fullscreen #viewer .inner .toggle {
-				background-image: url("images/open-small.svg");
-			}
 
 		}
 
@@ -1221,10 +1142,7 @@
 				opacity: 0;
 			}
 
-				#viewer .inner .toggle {
-					background-image: url("images/close-small.svg") !important;
-					background-size: 32px 32px;
-				}
+
 
 				body.fullscreen #viewer {
 					-moz-transition-delay: 0.5s;
