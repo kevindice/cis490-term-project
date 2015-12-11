@@ -1,12 +1,12 @@
 var express = require('express');
 var app = express();
 
-app.use('view engine', 'jade');
+app.set('view engine', 'jade');
 
-app.use(express.static('dist'));
+app.use(express.static('semantic/dist'));
 
 app.get('/', function (req, res) {
-  res.render('index.html');
+  res.render('index');
 });
 
 var server = app.listen(3000, function () {
