@@ -3,7 +3,7 @@ var app = express();
 
 app.set('view engine', 'jade');
 
-app.use(express.static('semantic/dist'));
+app.use(express.static('static'));
 
 app.get('/', function (req, res) {
   res.render('index');
