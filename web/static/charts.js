@@ -20,7 +20,6 @@ var fixUpData = function(data){
             return total + n.count;
         }, 0);
     });
-    console.log(a);
     return a;
 }
 
@@ -55,22 +54,29 @@ var addToChart = (function(){
         var xs = {};
         xs['data' + i] = 'x' + i;
 
-        var names = {};
         names['data' + i] = ng;
+
+        console.log(names);
 
         chart.load({
             xs: xs,
             columns: [
                 x_vals,
                 y_vals
-            ],
-            names: names
+            ]
         });
 
         chartDataTitles[ng] = 'data' + i;
         i++;
+
+        updateNames();
     }
 })();
+
+var names = {}
+var updateNames = function(){
+    chart.data.names(names);
+}
 
 var addNgram = function(ngram){
     if(!ngram.match(regex)){
@@ -118,6 +124,7 @@ var chart = c3.generate({
         x: {
             type: 'timeseries',
             tick: {
+                culling: { max: 8 },
                 format: '%Y-%m-%d'
             }
         }
