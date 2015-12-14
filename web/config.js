@@ -19,6 +19,8 @@ System.config({
     "c3": "npm:c3@0.4.11-rc4",
     "color-scheme": "npm:color-scheme@0.0.5",
     "core-js": "npm:core-js@1.2.6",
+    "lodash": "npm:lodash@3.10.1",
+    "moment": "npm:moment@2.10.6",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -129,6 +131,12 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "url": "github:jspm/nodelibs-url@0.1.0",
       "xmlhttprequest": "npm:xmlhttprequest@1.8.0"
+    },
+    "npm:lodash@3.10.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:moment@2.10.6": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:nwmatcher@1.3.7": {
       "process": "github:jspm/nodelibs-process@0.1.2"
